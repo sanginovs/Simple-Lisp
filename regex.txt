@@ -11,6 +11,15 @@ a+	One or more of the character a are required.
 
 Exercises:
 Write a regular expression matching strings of all a or b such as aababa or bbaa.
-/([a-b]+)/
+Answer: /([a-b]+)/
 
-$	The end of input is required.
+
+
+
+Write a regular expression matching strings of consecutive a and b such as ababab or aba.
+
+Answer: \b(((ab)+a?)|((ba)+b?))\b
+\b - word boundary
+
+
+Useful website: http://regexr.com/
