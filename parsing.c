@@ -1,7 +1,7 @@
 #include "mpc.h"
 
 #ifdef _WIN32 /* if operating system is Windows, execute the code below */
-
+/* for now, this program takes a user input from the terminal and parses the user input into Abstract Syntax Tree */
 static char buffer[2048];
 
 char* readline(char* prompt) {
