@@ -1,0 +1,16 @@
+Regex Rules:
+.	Any character is required.
+a	The character a is required.
+[abcdef]	Any character in the set abcdef is required.
+[a-f]	Any character in the range a to f is required.
+a?	The character a is optional.
+a*	Zero or more of the character a are required.
+a+	One or more of the character a are required.
+^	The start of input is required.
+
+
+Exercises:
+Write a regular expression matching strings of all a or b such as aababa or bbaa.
+/([a-b]+)/
+
+$	The end of input is required.
