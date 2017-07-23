@@ -1,6 +1,6 @@
 #include "mpc.h"
 
-#ifdef _WIN32
+#ifdef _WIN32 /* if operating system is Windows, execute the code below */
 
 static char buffer[2048];
 
@@ -14,7 +14,7 @@ char* readline(char* prompt) {
 }
 
 void add_history(char* unused) {}
-
+/* if an operating system is Linux, execute the code below; linux requires editline header for terminal while windows doesn't */ 
 #else
 #include <editline/readline.h>
 #include <editline/history.h>
